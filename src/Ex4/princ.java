@@ -6,8 +6,19 @@ public class princ {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Informe as polegadas: ");
-        Met04.conversor(sc.nextInt());
+        conversor(sc.nextInt());
 
 
+    }
+
+    public static float conversor(int num) {
+        float metros;
+        int polegadas = num;
+
+        metros = (polegadas * 0.0254f);
+        System.out.println("A conversão deu: ");
+        System.out.println(metros);
+
+        return metros;
     }
 }
